@@ -11972,6 +11972,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-10 {
   margin-bottom: 2.5rem;
 }
+.mt-0 {
+  margin-top: 0px;
+}
 .box-content {
   box-sizing: content-box;
 }

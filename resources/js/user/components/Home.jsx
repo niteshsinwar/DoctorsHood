@@ -24,9 +24,9 @@ const Home = () => {
       <div className="text-center mt-5">
         <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-teal-500">Featured</h2>
       </div>
-      <div class="grid lg:grid-cols-2 gap-6">
+      <div className="grid lg:grid-cols-2 gap-6">
         {features.map((features) => (
-          <div class="shadow-xl m-10 bg-white rounded-lg">
+          <div className="shadow-xl m-10 bg-white rounded-lg">
             <div className="bg-gray-50">
               <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:py-8 lg:px-4 lg:flex lg:items-center lg:justify-between">
                 <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-2xl md:w-96">
@@ -54,33 +54,33 @@ const Home = () => {
           <img  src='https://cdni.iconscout.com/illustration/premium/thumb/doctor-giving-advice-to-patient-2527798-2117453.png' alt="illustration" className="h-80" />
           <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
             <div className="inline-flex rounded-md">
-              <div class="space-y-4">
-                <div class="w-100">
-                  <div class="grid grid-cols-2 gap-2">
-                    <a href="/user/select-doctor/Allergist" class="md:mx-5 btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
+              <div className="space-y-4">
+                <div className="w-100">
+                  <div className="grid grid-cols-2 gap-2">
+                    <a href="/user/select-doctor/Allergist" className="md:mx-5 lg:btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
                       Allergist
                     </a>
-                    <a href="/user/select-doctor/Cardiologist" class="md:mx-5 btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
+                    <a href="/user/select-doctor/Cardiologist" className="md:mx-5 lg:btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
                       Cardiologist
                     </a>
                   </div>
                 </div>
-                <div class="w-100">
-                  <div class="grid grid-cols-2 gap-2">
-                    <a href="/user/select-doctor/Endocrinologist" class="md:mx-5 btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
+                <div className="w-100">
+                  <div className="grid grid-cols-2 gap-2">
+                    <a href="/user/select-doctor/Endocrinologist" className="md:mx-5 lg:btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
                       Endocrinologist
                     </a>
-                    <a href="/user/select-doctor/Neurologist" class="md:mx-5 btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
+                    <a href="/user/select-doctor/Neurologist" className="md:mx-5 lg:btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
                       Neurologist
                     </a>
                   </div>
                 </div>
-                <div class="w-100">
-                  <div class="grid grid-cols-2 gap-2">
-                    <a href="/user/select-doctor/Ophthalmologist" class="md:mx-5 btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
+                <div className="w-100">
+                  <div className="grid grid-cols-2 gap-2">
+                    <a href="/user/select-doctor/Ophthalmologist" className="md:mx-5 lg:btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
                       Ophthalmologist
                     </a>
-                    <a href="/user/select-specialisation" class="md:mx-5 btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
+                    <a href="/user/select-specialisation" className="md:mx-5 lg:btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
                       More...
                     </a>
                   </div>
@@ -96,33 +96,33 @@ const Home = () => {
       </div>
       <div className="bg-indigo-100 shadow-xl m-10">
         <div className="max-w-7xl mx-auto py-2 px-4 sm:px-6 lg:py-2 lg:px-8 lg:flex lg:items-center lg:justify-between rounded-lg">
-          <div class="space-y-4">
-            <div class="w-100">
-              <div class="grid grid-cols-2 gap-2">
-                <a href="/user/select-doctor/Back Pain" class="md:mx-5 btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
+          <div className="space-y-4">
+            <div className="w-100">
+              <div className="grid grid-cols-2 gap-2">
+                <a href="/user/select-doctor/Back Pain" className="md:mx-5 lg:btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
                   Back Pain
                 </a>
-                <a href="/user/select-doctor/Fatigue" class="md:mx-5 btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
+                <a href="/user/select-doctor/Fatigue" className="md:mx-5 lg:btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
                   Fatigue
                 </a>
               </div>
             </div>
-            <div class="w-100">
-              <div class="grid grid-cols-2 gap-2">
-                <a href="/user/select-doctor/Cough" class="md:mx-5 btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
+            <div className="w-100">
+              <div className="grid grid-cols-2 gap-2">
+                <a href="/user/select-doctor/Cough" className="md:mx-5 lg:btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
                   Cough
                 </a>
-                <a href="/user/select-doctor/Constipation" class="md:mx-5 btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
+                <a href="/user/select-doctor/Constipation" className="md:mx-5 lg:btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
                   Constipation
                 </a>
               </div>
             </div>
-            <div class="w-100">
-              <div class="grid grid-cols-2 gap-2">
-                <a href="/user/select-doctor/Itching" class="md:mx-5 btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
+            <div className="w-100">
+              <div className="grid grid-cols-2 gap-2">
+                <a href="/user/select-doctor/Itching" className="md:mx-5 lg:btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
                   Itching
                 </a>
-                <a href="/user/select-symptom" class="md:mx-5 btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
+                <a href="/user/select-symptom" className="md:mx-5 lg:btn sm:text-2xl text-teal-500 border-2 border-teal-500 hover:border-teal-800 rounded-lg">
                   More...
                 </a>
               </div>
