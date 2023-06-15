@@ -1,0 +1,10 @@
+version: 1
+name: doctorshood
+type: web
+build:
+  dockerfile: Dockerfile
+env:
+  - key: APP_KEY
+    from_secret: false
+  - key: APP_ENV
+    value: production

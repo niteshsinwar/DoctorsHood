@@ -84,7 +84,7 @@ trait AuthenticatesUsers
     protected function attemptLogin(Request $request)
     {
         return $this->guard()->attempt(
-            $this->credentials($request), $request->filled('remember')
+            $this->credentials($request), $request->boolean('remember')
         );
     }
 
@@ -129,11 +129,7 @@ trait AuthenticatesUsers
      */
     protected function authenticated(Request $request, $user)
     {
-        if($user->role === 'patient'){
-            return redirect('/homepage');
-        }else if ($user->role === 'doctor'){
-            return redirect('/doctor/dashboard');
-        }
+        //
     }
 
     /**
@@ -192,11 +188,7 @@ trait AuthenticatesUsers
      */
     protected function loggedOut(Request $request)
     {
-        if ($request->role === 'patient'){
-            return redirect('/homepage');
-        }else if ($request->role === 'doctor'){
-            return redirect('/doctor/login');
-        }
+        //
     }
 
     /**

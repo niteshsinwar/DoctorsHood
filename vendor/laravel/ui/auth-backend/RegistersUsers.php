@@ -63,10 +63,6 @@ trait RegistersUsers
      */
     protected function registered(Request $request, $user)
     {
-        if ($user->role === 'patient'){
-            return redirect('/user/create-profile');
-        }else if ($user->role === 'doctor'){
-            return redirect('/doctor/create-profile');
-        }
+        //
     }
 }
