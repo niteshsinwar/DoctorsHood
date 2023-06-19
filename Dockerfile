@@ -1,26 +1,20 @@
-FROM php:8.2-fpm
+FROM richarvey/nginx-php-fpm:1.9.1
 
-# Install dependencies
-RUN apt-get update && apt-get install -y \
-    libpq-dev \
-    && docker-php-ext-install pdo pdo_pgsql
+COPY . .
 
-# Copy application files
-COPY . /var/www/html
+# Image config
+ENV SKIP_COMPOSER 1
+ENV WEBROOT /var/www/html/public
+ENV PHP_ERRORS_STDERR 1
+ENV RUN_SCRIPTS 1
+ENV REAL_IP_HEADER 1
 
-# Set working directory
-WORKDIR /var/www/html
+# Laravel config
+ENV APP_ENV production
+ENV APP_DEBUG false
+ENV LOG_CHANNEL stderr
 
-# Install Composer dependencies
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-RUN composer install --no-interaction --no-scripts --no-dev --prefer-dist
+# Allow composer to run as root
+ENV COMPOSER_ALLOW_SUPERUSER 1
 
-# Set up Laravel
-RUN cp .env.example .env
-RUN php artisan key:generate
-
-# Expose port 80
-EXPOSE 80
-
-# Start the PHP-FPM server
-CMD ["php-fpm"]
+CMD ["/start.sh"]
